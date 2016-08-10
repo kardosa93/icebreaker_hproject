@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>IceBreaker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class='header'>
+	    <div class='wrap'>
+	        <div class='logo'>
+	            <a href='index.html'><img src='assets/images/logo.png' title='logo' alt=''/></a>
+	        </div>
+	        <div class='clear'> </div>
+	    </div>
+	</div>
+	<div class='clear'> </div>
+	<div class="header-nav">
+		<div class="wrap">
+			<div class="left-nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="project.html">Project</a></li>
+					<li class="active"><a href="submit.html">Submit Ideas</a></li>
+					<li><a href="code.html">Code</a></li>
+				</ul>
+			</div>
+		    <div class="clear"> </div>
+		</div>
+	</div>
+	<div class="wrap">
+		<div class="content">
+		    <div class="submit-form">
+				<form action="upload.php" method="post" enctype="multipart/form-data">
+					<span><label>NAME</label></span>
+					<span><input type="text" name="name" value=""></span>
+					<span><label>E-MAIL</label></span>
+					<span><input type="text" name="email" value=""></span>
+					<span><label>SHORT COMMENT/IDEA</label></span>
+					<span><input type="text" name="info"></span><br />
+					<span><input type="submit" value="Submit" name="submit"></span>
+				</form>
+			</div>
+		    <div class="clear"> </div><br/>
+		</div>
+		<div class="clear"> </div>
+	</div>
+</body>
+</html>

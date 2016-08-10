@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>IceBreaker</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="assets/js/phaser.js"></script>
+    <script type="text/javascript" src="assets/js/game.js"></script>
+    <!--Load the socket.io-client, which exposes a io global, and then connect-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <div class='header'>
+	    <div class='wrap'>
+	        <div class='logo'>
+	            <a href='index.html'><img src='assets/images/logo.png' title='logo' alt=''/></a>
+	        </div>
+	        <div class='clear'> </div>
+	    </div>
+	</div>
+	<div class='clear'> </div>
+	<div class="header-nav">
+		<div class="wrap">
+			<div class="left-nav">
+				<ul>
+					<li class="active"><a href="index.html">Home</a></li>
+					<li><a href="project.html">Project</a></li>
+					<li><a href="submit.html">Submit Ideas</a></li>
+					<li><a href="code.html">Code</a></li>
+				</ul>
+			</div>
+		    <div class="clear"> </div>
+		</div>
+	</div>
+	<div class="wrap">
+		<div class="content">
+			<div id="game-area"></div>
+            <input id="textboxName" name="textboxName" type="text">
+            <textarea id="textboxText" name="textboxText"></textarea>
+            <textarea id="textboxDiscussion" name="textboxDiscussion"></textarea>
+            <input id="textboxComment" name="textboxComment" type="text">
+			<div class="clear"> </div><br/>
+		</div>
+		<div class="clear"> </div>
+	</div>
+</body>
+</html>
